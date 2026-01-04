@@ -1,3 +1,82 @@
+# Election Synchronization Feasibility & Impact Simulator
+
+Live demo: https://electionsimulator.netlify.app/
+
+## Project overview
+
+- A web-based simulation dashboard to analyze the potential impact of synchronized elections using assumed (dummy) data.
+- Context reference only: One Nation One Election.
+- Strictly analytical and non-political.
+
+## Objective
+
+- Provide a neutral, data-driven decision-support tool to simulate election scheduling scenarios and evaluate their potential financial, administrative, and governance impacts.
+
+## Problem background
+
+- Frequent elections across states and governance levels can cause:
+  - Governance disruption (Model Code of Conduct periods)
+  - Recurring administrative and security costs
+  - Repeated deployment of officials and resources
+  - Voter fatigue
+
+## Proposed solution
+
+- Interactive dashboard where users can:
+  - Choose different election synchronization scenarios (Current / Partial / Full)
+  - Compare scenarios against the current system
+  - View projected outcomes via metrics and charts
+- Uses assumption-based dummy data only; no voter or personal data.
+
+## How the system works (high-level)
+
+User inputs (scenario & assumptions) → Simulation engine (rule-based logic) → Impact metrics calculation → Dashboard with charts & indicators
+
+## Key features
+
+- Scenario simulation: Current vs Partial vs Full
+- Impact visualization (charts & indicators)
+- Estimated election costs
+- MCC duration comparison
+- Governance stability score
+- Administrative load indicator
+- Ethical & neutral design; no political messaging
+
+## How to run locally (short)
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run dev server:
+
+```bash
+npm run dev
+# open http://localhost:8080
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+## Project layout (short)
+
+- `src/` — frontend source (pages, components, hooks, libs)
+- `public/` — static assets (logo, robots.txt)
+- `package.json` — scripts and dependencies
+
+## Notes & disclaimer
+
+- Uses assumed data only; not connected to real election systems.
+- Built for research, education, and demonstration purposes.
+
+## Contact
+
+- Open an issue or submit a pull request for questions or improvements.
 
 🗳️ Election Synchronization Feasibility & Impact Simulator
 
