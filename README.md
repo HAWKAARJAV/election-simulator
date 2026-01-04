@@ -78,6 +78,33 @@ npm run build
 
 - Open an issue or submit a pull request for questions or improvements.
 
+## Technical (concise)
+
+- Requirements: Node.js 18+ (or LTS), npm
+- Main scripts (in `package.json`):
+  - `npm run dev` — start Vite dev server (http://localhost:8080)
+  - `npm run build` — production build (outputs `dist`)
+  - `npm run preview` — locally preview `dist`
+  - `npm run lint` — run ESLint checks
+
+- Key packages: React, TypeScript, Vite, Tailwind CSS, Recharts (charts), shadcn-ui primitives
+
+- Build & deploy:
+  - For Netlify / Vercel: set build command `npm run build` and publish directory `dist`.
+  - GitHub Pages: build to `dist` and publish via workflow or `gh-pages` if preferred.
+
+## Project layout (technical)
+
+- `src/` — React + TypeScript source (pages, components, hooks, lib)
+- `public/` — static assets served as-is (logo, robots.txt)
+- `package.json` — scripts, dependencies
+- `vite.config.ts` — Vite build/dev config
+- `tailwind.config.ts` — Tailwind configuration
+
+---
+
+If you'd like, I can also add a minimal `netlify.toml` or a GitHub Actions workflow for automatic deploys on push.
+
 🗳️ Election Synchronization Feasibility & Impact Simulator
 
 A web-based simulation dashboard that helps analyze the potential impact of synchronized elections using assumed data.
