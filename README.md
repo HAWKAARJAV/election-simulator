@@ -1,98 +1,71 @@
-🗳️ Election Synchronization Feasibility & Impact Simulator
 
-A web-based simulation dashboard to analyze the impact of synchronized elections using assumed data.
-(Context only: One Nation One Election)
+# Election Synchronization Feasibility & Impact Simulator
 
-⸻
+Live demo: https://electionsimulator.netlify.app/
 
-🎯 Objective
+Short description
+- Web-based simulation dashboard to analyze the impact of synchronized elections using assumed (dummy) data.
+- Context: One Nation One Election (for exploration only).
 
-To provide a neutral, data-driven decision-support tool that helps users simulate different election synchronization scenarios and understand their financial, administrative, and governance impact.
+Objective
+- Provide a neutral, data-driven decision-support tool to simulate election synchronization scenarios and evaluate financial, administrative, and governance impacts.
 
-⸻
+Problem (why this matters)
+- Frequent elections cause:
+  - Governance disruption (e.g., Model Code of Conduct impacts)
+  - Recurring election costs
+  - Administrative overload for election bodies
+  - Voter fatigue
 
-❓ Problem
+Solution (what this project does)
+- Interactive dashboard where users:
+  - Select scenarios (Current / Partial / Full synchronization)
+  - Configure assumptions (turnout, swing, costs, time horizon)
+  - Run simulations and view results as charts and summary scores
+- Non-political: uses dummy/assumed data and no voter identifiers.
 
-Frequent elections across states lead to:
-	•	📉 Governance disruption (Model Code of Conduct)
-	•	💰 High recurring election costs
-	•	🧑‍💼 Administrative overload
-	•	🗳️ Voter fatigue
+Key features (quick)
+- Scenario simulation: Current vs Partial vs Full
+- Impact dashboard and charts
+- Cost projections and MCC duration estimates
+- Governance stability score
+- Export or copy results (lightweight)
 
-Currently, there is no simple analytical tool to objectively compare these impacts.
+How to run locally
+1. Install dependencies:
+```bash
+npm install
+```
+2. Run development server:
+```bash
+npm run dev
+# open http://localhost:8080
+```
+3. Build for production:
+```bash
+npm run build
+```
 
-⸻
+Project layout
+- `src/` — frontend source (pages, components, hooks, libs)
+- `public/` — static assets (logo, robots.txt)
+- `package.json` — scripts and dependencies
 
-💡 Solution
+Architecture (high-level)
+- User input → Simulation logic (rule-based) → Computed metrics → Charts & dashboard
+- Data: static JSON assumptions used for simulations
 
-A simulation-based web dashboard where users:
-	•	Select election scenarios
-	•	Run simulations
-	•	Instantly view projected outcomes via charts & scores
+Tech stack
+- Frontend: React + Vite + Tailwind CSS
+- Charts: Recharts (or similar)
+- Backend: Node.js/Express (if using server-side simulation) — optional
 
-✔️ Non-political
-✔️ Uses dummy/assumed data
-✔️ Purely analytical
+Notes & disclaimer
+- Uses assumed data only; not a live election system.
+- Built for research, education, and hackathon/demo use.
 
-⸻
-
-🧩 Key Features
-	•	🔁 Scenario Simulation
-Current vs Partial vs Full Synchronization
-	•	📊 Impact Dashboard
-	•	Cost Projection
-	•	MCC Duration
-	•	Governance Stability Score
-	•	🛡️ Ethical by Design
-	•	No voter data
-	•	No political messaging
-
-⸻
-
-🏗️ Architecture (High-Level)
-
-User Input
-   ↓
-Simulation Logic (Backend)
-   ↓
-Computed Metrics
-   ↓
-Charts & Dashboard (Frontend)
-
-	•	Frontend: Inputs + Graphs
-	•	Backend: Rule-based simulation engine
-	•	Data: Static JSON (assumed values)
-
-⸻
-
-🛠️ Tech Stack
-	•	Frontend: HTML/CSS/JS or React, Chart.js
-	•	Backend: Node.js, Express
-	•	Data: JSON (dummy assumptions)
-
-⸻
-
-📈 Impact & Effectiveness
-	•	Enables evidence-based comparison
-	•	Improves clarity in policy discussions
-	•	Outputs change dynamically with inputs
-
-⸻
-
-📚 Learnings
-	•	Policy → Tech translation
-	•	Simulation & rule-based logic
-	•	Ethical civic-tech design
-	•	Data visualization for decision-making
-
-⸻
-
-⚠️ Disclaimer
-	•	Uses assumed data only
-	•	Not a real election system
-	•	Built for academic/hackathon purposes
-
-⸻
+Contact
+- Open an issue or submit a pull request.
 
 
 # Election Simulator
