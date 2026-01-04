@@ -48,6 +48,11 @@ Notes
 
 Contact
 - Create an issue or PR for questions, feedback, or collaboration.
+ 
+Deployment / Live demo
+- Live site: https://electionsimulator.netlify.app/ (deployed via Netlify)
+
+# Election Simulator
 # Election Simulator
 
 ## Project info
