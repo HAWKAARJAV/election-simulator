@@ -42,7 +42,7 @@ export default function Index() {
     <Layout>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-hero">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/5 via-transparent to-transparent" />
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/5 via-transparent to-transparent" />
         
         <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="max-w-4xl mx-auto text-center">
@@ -85,17 +85,15 @@ export default function Index() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
-              <Link to="/simulate">
-                <Button variant="hero" size="xl" className="w-full sm:w-auto">
+              <Button asChild variant="hero" size="xl" className="w-full sm:w-auto">
+                <Link to="/simulate">
                   Run Simulation
                   <ArrowRight className="h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/ethics">
-                <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                  View Ethics Statement
-                </Button>
-              </Link>
+                </Link>
+              </Button>
+              <Button asChild variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                <Link to="/ethics">View Ethics Statement</Link>
+              </Button>
             </motion.div>
           </div>
         </div>
@@ -180,7 +178,7 @@ export default function Index() {
             transition={{ duration: 0.6 }}
             className="relative overflow-hidden rounded-3xl bg-primary p-8 md:p-16 text-center"
           >
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
+            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
             
             <div className="relative z-10">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
@@ -190,12 +188,12 @@ export default function Index() {
                 Start your simulation now and see the projected impact of different
                 election synchronization scenarios.
               </p>
-              <Link to="/simulate">
-                <Button variant="hero" size="xl">
+              <Button asChild variant="hero" size="xl">
+                <Link to="/simulate">
                   Start Simulation
                   <ArrowRight className="h-5 w-5" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </motion.div>
         </div>

@@ -27,9 +27,7 @@ export function Layout({ children }: LayoutProps) {
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
-                <BarChart3 className="h-5 w-5 text-primary-foreground" />
-              </div>
+              <img src="/logo.png" alt="Election Sync logo" className="h-12 w-12 object-contain rounded-lg shadow-sm" />
               <div className="hidden sm:block">
                 <h1 className="font-display text-lg font-bold text-foreground">
                   Election Sync

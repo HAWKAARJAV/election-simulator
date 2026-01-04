@@ -78,11 +78,9 @@ export default function Results() {
             <p className="text-muted-foreground mb-8">
               Please run a simulation first to see the results.
             </p>
-            <Link to="/simulate">
-              <Button variant="hero" size="lg">
-                Configure Simulation
-              </Button>
-            </Link>
+            <Button asChild variant="hero" size="lg">
+              <Link to="/simulate">Configure Simulation</Link>
+            </Button>
           </div>
         </div>
       </Layout>
@@ -376,11 +374,9 @@ export default function Results() {
             <ArrowLeft className="h-4 w-4" />
             Modify Parameters
           </Button>
-          <Link to="/ethics">
-            <Button variant="secondary" size="lg">
-              View Ethics Statement
-            </Button>
-          </Link>
+          <Button asChild variant="secondary" size="lg">
+            <Link to="/ethics">View Ethics Statement</Link>
+          </Button>
         </motion.div>
       </div>
     </Layout>
