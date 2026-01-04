@@ -4,19 +4,19 @@ Live demo: https://electionsimulator.netlify.app/
 
 ## Project overview
 
-- Web-based simulation platform for data-driven evaluation of synchronized election scenarios using assumed data.
+- Web-based simulation platform that enables data-driven evaluation of synchronized election scenarios by analyzing projected financial, administrative, and governance impact using assumed data.
 - Context (reference only): One Nation One Election.
 - Neutral, explainable, and strictly analytical — not policy advocacy.
 
 ## Problem statement
 
-- Frequent, staggered elections cause:
+- Frequent, staggered elections introduce systemic challenges:
   - Repeated Model Code of Conduct (MCC) periods that slow governance
   - High recurring administrative and security costs
   - Continuous redeployment of election personnel and infrastructure
   - Voter fatigue from frequent polling cycles
 
-- There is a lack of a simple, neutral tool to objectively assess feasibility, trade-offs, and administrative impact of synchronization.
+- There is no simple, neutral, data-driven tool to objectively assess feasibility, trade-offs, and administrative impact of synchronization.
 
 ## Proposed solution
 
@@ -84,7 +84,7 @@ npm run build
 - Charts: Chart.js / Recharts
 - Backend (optional): Node.js + Express (rule-based engine)
 
-## Outcomes & evaluation readiness
+## Outcomes & effectiveness
 
 - Transparent, auditable simulation outputs
 - Dynamic metrics that update with user inputs
@@ -96,7 +96,7 @@ npm run build
 - Not connected to real election infrastructure or legal/constitutional modeling
 - Built for academic/demo use, not operational deployment
 
-## Future scope (examples)
+## Future scope
 
 - State-wise customization, local election scenarios, sensitivity analysis, richer reporting
 
